@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+      
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+       
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #192252; 
+    }
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar{
+    padding: 25px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 100px;
+
+    &__logo{
+        font-family: sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    &__link{
+        text-decoration: none;
+        background-color: rgb(14, 23, 52);
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid rgb(14, 23, 52);
+    }
+
+    &__link:hover{
+        color: rgb(14, 23, 52);
+        background-color: white;
+        border: 1px solid rgb(14, 23, 52);
+        transition: all 0.5s;
+    }
+
+
+}
+
+.navbar__items{
+    &__link{
+        text-decoration: none;
+        color: black;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    &__link:hover{
+        border-bottom: 1px solid rgb(14, 23, 52);
+    }
+
+}
+
+.hero{
+    margin: 0px 100px;
+    display: flex;
+
+    &__img{
+        height: 600px;
+        padding-top: 10px;
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 100px;
+
+        &__center{
+            padding-top: 210px;
+        }
+
+    }
+
+
+    .hero__items{
+        margin-top: 250px;
+
+        &__logo{
+            font-family: sans-serif;
+            color: rgb(14, 23, 52);
+            font-weight: 600;
+            font-size: 48px;
+            width: 500px;
+        }
+
+        &__text{
+            color: rgb(132, 143, 172);
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            width: 450px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        &__link{
+            text-decoration: none;
+            background-color: rgb(14, 23, 52);
+            color: white;
+            padding: 10px 25px;
+            border: 1px solid #192252;
+        }
+
+        &__link:hover{
+            transition: all 0.5s;
+            background-color: white;
+            color: #192252;
+        }
+
+    }
+
+}
+
+.about{
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-around;
+
+    &__img{
+        width: auto;
+    }
+
+    .about__items{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 50%;
+        margin-top: 15%;
+
+        &__logo{
+            font-family: sans-serif;
+            font-size: 36px;
+            color: #192252;
+            font-weight: 600;
+        }
+
+        &__text{
+            width: 530px;
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #848fac;
+            font-weight: 400;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        &__links{
+            text-decoration: none;
+            background-color: rgb(14, 23, 52);
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid rgb(14, 23, 52);
+        }
+
+        &__links:hover{
+            background-color: white;
+            color: rgb(14, 23, 52);
+            transition: all 0.5s;
+        }
+
+    }
+
+}
+
+.benefit{
+    margin: 100px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__items{
+
+        &__logo{
+            color: #192252;
+            font-family: sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+
+            &__text{
+                font-weight: 400;
+                font-size: 18px;
+                font-size: 18px;
+                color: #848fac;
+                font-family: sans-serif;
+                width: 550px;
+            }
+        }
+    }
+}
+
+.food{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .food__items{
+        &__logo{
+            color: #192252;
+            font-family: sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+
+            &__text{
+                font-weight: 400;
+                font-size: 18px;
+                font-size: 18px;
+                color: #848fac;
+                font-family: sans-serif;
+                width: 550px;
+            }
+        }
+    }
+}
+
+.reservation{
+    margin: 100px 100px;
+    
+    .reservation__items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+
+        &__logo{
+            text-align: center;
+            color: #192252;
+            font-family: sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+    
+            &__text{
+                font-size: 18px;
+                text-align: center;
+                font-family: sans-serif;
+                color: #848fac;
+                font-weight: 400;
+                width: 550px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                &__link{
+                    border: 1px solid #192252;
+                    background-color: #192252;
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                &__link:hover{
+                    background-color: white;
+                    color: #192252;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+
+    .rooms{
+        display: flex;
+
+        .rooms__items{
+            &__logo{
+                color: #192252;
+                font-family: sans-serif;
+                font-size: 36px;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+
+            &__rooms{
+                margin-left: 12px;
+                margin-right: 12px;    
+            }
+
+            &__text{
+                font-size: 18px;
+                font-family: sans-serif;
+                color: #848fac;
+                font-weight: 400;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                width: 380px;
+            }
+
+            &__link{
+                color: #424F7B;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 18px;
+                font-family: sans-serif;
+            }
+
+            &__link:hover{
+                border-bottom: 1px solid #192252;
+            }
+        }
+    }
+}
+
+.room{
+    display: flex;
+    justify-content: space-around;
+
+    .room__items{
+        margin-top: 50px;
+
+        &__text{
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #848fac;
+
+            &__logo{
+                color: #192252;
+                font-family: sans-serif;
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                margin-top: 10px;
+
+                &__text{
+                    font-family: sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #848fac;
+                    width: 350px;
+                    margin-bottom: 30px;
+
+                    &__link{
+                        font-size: 16px;
+                        font-family: sans-serif;
+                        font-weight: 500;
+                        text-decoration: none;
+                        padding: 10px 20px;
+                        background-color: #192252;
+                        color: white;
+                        border: 1px solid #192252;
+
+                        &__A{
+                            margin-left: 20px;
+                            font-size: 16px;
+                            font-family: sans-serif;
+                            font-weight: 500;
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+
+                    &__link:hover{
+                        background-color: white;
+                        color: #192252;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .arrow{
+
+        .arrow__items{
+            display: flex;
+            height: 315px;
+            flex-direction: column;
+            justify-content: space-evenly;        
+        }
+         
+        .arrow__items__block{
+            display: flex;
+            align-items: center;
+            background-color: whitesmoke;
+            padding: 5px 20px;
+            box-shadow: 0px 0px 5px 0px black;
+
+            &__logo{
+                margin-right: 70px;
+                color: rgb(66, 79, 123);
+                font-weight: 600;
+                font-size: 24px;
+                font-family: sans-serif;
+
+                &__button{
+                    background-color: #ff620a;
+                    border: none;
+                    padding: 20px 20px;
+                    color: white;
+                    border-top-right-radius: 30px;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+
+                    &__text{
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: #848fac;
+                        width: 445px;
+                    }
+                }
+
+                &__button:hover{
+                    background-color: white;
+                    color: #ff620a;
+                }
+
+                &__button2{
+                    background-color: #ff620a;
+                    border: none;                    padding: 20px 20px;
+                    color: white;
+                    border-top-right-radius: 30px;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+
+                &__button2:hover{
+                    background-color: white;
+                    color: #ff620a;
+                }
+
+                &__button3{
+                    background-color: #ff620a;
+                    border: none;                    padding: 20px 20px;
+                    color: white;
+                    border-top-right-radius: 30px;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    margin-left: 95px;
+                }
+    
+                &__button3:hover{
+                    background-color: white;
+                    color: #ff620a;
+                }
+            }
+
+            &__info{
+                background-color: whitesmoke;
+                padding: 10px 20px;
+                box-shadow: 0px 0px 5px 0px black;
+
+                .box{
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 20px;
+                }
+
+                &__logo2{
+                    margin-right: 70px;
+                    color: rgb(66, 79, 123);
+                    font-weight: 600;
+                    font-size: 24px;
+                    font-family: sans-serif;
+                }
+            }
+        }
+    }
+}
+
+.testimoni{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+
+    .testimoni__items{
+        &__logo{
+            font-weight: 600;
+            font-size: 36px;
+            font-family: sans-serif;
+            margin-bottom: 30px;
+
+            &__img{
+
+                &__text{
+                    font-family: sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #848fac;
+                    width: 730px;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    margin-left: 320px;
+                }
+
+                &__text2{
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    font-size: 20px;
+                    color: black;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    height: 500px;
+    background-color: #0B265A;
+}
+
+footer .footer {
+    padding: 130px 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer h1 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+footer .footer p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    width: 185px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+footer .media {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+
+footer .media a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+}
+
+footer .media .fa-twitter:hover {
+    color: #1D9BF0;
+}
+
+footer .media .fa-instagram:hover {
+    color: #bc1888;
+}
+
+footer .media .fa-facebook:hover {
+    color: #0165E1;
+}
+
+footer .a-btn {
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+}
+
+footer .a-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+footer .a-btn .a1 {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: sans-serif;
+}
